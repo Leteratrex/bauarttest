@@ -1,0 +1,152 @@
+/*Устанавливаем ширифты для все страницы и убераем интервалы между элементами */
+html, body {
+  font-family: sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Стили для панели навигации*/
+nav ul {
+  text-align: left;
+  position: fixed;
+  width: 100%;
+  background-color: #22313F;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 55px;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: red;
+}
+
+/*Стили для блока нижней части страницы*/
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #22313F;
+  color: white;
+  text-align: center;
+}
+
+footer a{
+  color: white;
+}
+
+footer a:hover {
+  color: red;
+}
+
+/*Устанавливаем стиль для списка статей слева*/
+aside {
+  position: fixed;
+  overflow: auto;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  margin-top: 65px;
+  margin-right: 10px;
+}
+
+aside ul{
+  list-style-type: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px;
+  border: 2px solid black;
+  text-align: center;
+  background-color: #D9D99E;
+}
+
+aside ul a{
+    color: black;
+}
+
+/*Устанавливаем стиль для блока справа*/
+#right {
+  position: fixed;
+  overflow: auto;
+  right: 0;
+  width: 80%;
+  height: 100%;
+  margin-top: 65px;
+  text-align: justify;
+  margin-right: 10px;
+}
+
+#right div {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#form-text {
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/*Форма добавления статей*/
+form {
+  text-align: left;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+#title {
+  width: 100%;
+  height: 20px;
+}
+
+#text {
+  width: 100%;
+  height: 100px;
+  resize: none;
+}
+
+#add_article {
+  display: block;
+  background-color: #59ACE0;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  border: 0px solid;
+}
+
+/*Стиль информативного блока*/
+#resultblock {
+  display: none;
+}
+
+.succes_block{
+  background-color: #87DEA8;
+  height: 40px;
+  padding: 5px;
+}
+
+.error_block {
+  background-color: #F23857;
+  height: 40px;
+  padding: 5px;
+}
